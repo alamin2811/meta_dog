@@ -403,7 +403,7 @@ button {
     padding-top: 40px;
     &::after{
         content: '';
-        height: 110%;
+        height: 120%;
         width: 100%;
         position: absolute;
         left: 0px;
@@ -424,18 +424,46 @@ button {
     z-index: 3;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.05);
-    padding: 30px 20px;
+    padding: 23px 20px;
     min-height: 100%;
+    overflow: hidden;
+    &::after{
+        content: '';
+        border-radius: 20px 20px 0px 0px;
+        background: rgba(255, 255, 255, 0.10);
+        height: 70px;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        z-index: 1;
+    }
+    &::before{
+        content: '';
+        border-radius: 20px 20px 0px 0px;
+        background: #0811DB;
+        filter: blur(65px);
+        height: 100px;
+        width: 100px;
+        left: -30px;
+        top: -30px;
+        position: absolute;
+        z-index: 0;
+    }
     .card-title{
         margin-bottom: 35px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
+        z-index: 3;
         &.title-green{
             color: #00E37C;
         }
     }
     ul{
+        position: relative;
+        z-index: 3;
         li{
             color: rgba(255, 255, 255, 0.90);
             font-size: 16px;
