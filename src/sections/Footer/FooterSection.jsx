@@ -7,6 +7,7 @@ import discord from '../../assets/images/icons/discord.svg';
 import medium from '../../assets/images/icons/medium.svg';
 import sheildIcon from '../../assets/images/icons/sheild.svg'
 import solidproofLogo from '../../assets/images/logo/solidproof-logo.png'
+import FooterBottom from './FooterBottom';
 
 const FooterSection = () => {
   // Define social media data as an array of objects
@@ -83,6 +84,7 @@ const FooterSection = () => {
               </div>
             </div>
           </div>
+          <FooterBottom/>
         </div>
       </div>
     </div>

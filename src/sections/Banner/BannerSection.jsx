@@ -11,7 +11,7 @@ const BannerSection = () => {
                     <div className="container">
                         <div className="banner-text">
                             <h3 className='uppercase'>Play . Win . Earn</h3>
-                            <h1 className='uppercase'>Blockchain Meme <span>Dog Racing </span>Platform</h1>
+                            <h1 className='uppercase'>Blockchain Meme <span class="text--glitch">Dog Racing </span>Platform</h1>
                             <p>Bet on your favorite crypto meme dogs, live on our platform</p>
                             <div className="banner-btns">
                                 <button className='play-btn banner-btn'>play Now</button>
