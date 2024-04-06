@@ -11,7 +11,12 @@ const Affiliate = () => {
                                 <h6 className='title uppercase'>Affiliate Program</h6>
                             </div>
                             <h4>Invite Friends & Get percent Rewards on all deposits. Join MetaDog Affiliate Program & start earning Today.</h4>
-                            <button className='join-btn'>Join Affiliate</button>
+                            <button className='join-btn btn'>
+                                <span className='btn-inner'>
+                                    <span className='btn-text'>Join Affiliate</span>
+                                    <span className='btn-text'>Join Affiliate</span>
+                                </span>
+                            </button>
                         </div>
                     </div>
                     <div className="col-md-5">

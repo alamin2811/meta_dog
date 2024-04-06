@@ -9,8 +9,8 @@ const navItems = [
 ];
 
 const buttons = [
-    { text: 'Buy $xdog', className: 'buy-btn header-btn' },
-    { text: 'Play Now', className: 'play-btn header-btn' }
+    { text: 'Buy $xdog', className: 'buy-btn header-btn btn' },
+    { text: 'Play Now', className: 'play-btn header-btn btn' }
 ];
 
 const HeaderSection = () => {
@@ -29,7 +29,12 @@ const HeaderSection = () => {
                         </ul>
                         <div className="header-btns">
                             {buttons.map((button, index) => (
-                                <button key={index} className={button.className}>{button.text}</button>
+                                <button key={index} className={button.className}>
+                                    <span className='btn-inner'>
+                                        <span className='btn-text'>{button.text}</span>
+                                        <span className='btn-text'>{button.text}</span>
+                                    </span>
+                                </button>
                             ))}
                         </div>
                     </div>

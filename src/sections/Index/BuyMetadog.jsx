@@ -10,7 +10,12 @@ const BuyMetadog = () => {
                         <div className="buy-metadog-text">
                             <SectionTitle title="buy-metadog Program" subtitle="Introducing Revenue sharing" />
                             <p>On MetaDog you have many ways to earn, bet on our dog races or buy & hold $MetaDog token you hold. we have built this to be fun and exciting for the crypto meme community.</p>
-                            <button className='buy-metadog-btn'>Buy Metadog</button>
+                            <button className='buy-metadog-btn btn'>
+                                <span className='btn-inner'>
+                                        <span className='btn-text'>Buy Metadog</span>
+                                        <span className='btn-text'>Buy Metadog</span>
+                                </span>
+                            </button>
                         </div>
                     </div>
                     <div className="col-md-5">
