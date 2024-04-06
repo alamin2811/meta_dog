@@ -15,7 +15,7 @@ const tokenomicsData = [
 
 const Tokenomics = () => {
   return (
-    <div className='tokenomics-section'>
+    <div className='tokenomics-section' id="tokenomics">
         <div className="container">
             <SectionTitle
                 titlePosition="text-center" title="Metadog Numbers" subtitle="Tokenomics"

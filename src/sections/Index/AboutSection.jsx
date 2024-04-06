@@ -3,7 +3,7 @@ import SectionTitle from '../../components/SectionTitle'
 
 const AboutSection = () => {
   return (
-    <div className='about-section'>
+    <div className='about-section' id='aboutSection'>
       <div className="container">
         <div className="about-card">
           <div className="overlay">

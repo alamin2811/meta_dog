@@ -44,7 +44,7 @@ const RoadmapSection = () => {
     ];
 
     return (
-        <div className='roadmap-section'>
+        <div className='roadmap-section' id="roadmap">
             <div className="container">
                 <SectionTitle titlePosition="text-center" title="Metadog Goals" subtitle="Roadmap" />
             </div>

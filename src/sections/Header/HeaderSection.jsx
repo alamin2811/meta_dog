@@ -2,9 +2,9 @@ import React from 'react';
 import logo from '../../assets/images/logo/logo.png';
 
 const navItems = [
-    { text: 'About MetaDog', link: '#' },
-    { text: 'Tokenomics', link: '#' },
-    { text: 'Roadmap', link: '#' },
+    { text: 'About MetaDog', link: '#aboutSection' },
+    { text: 'Tokenomics', link: '#tokenomics' },
+    { text: 'Roadmap', link: '#roadmap' },
     { text: 'Whitepaper', link: '#' }
 ];
 

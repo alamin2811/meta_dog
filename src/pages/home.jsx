@@ -10,6 +10,7 @@ import Affiliate from '../sections/Index/Affiliate'
 import BuyMetadog from '../sections/Index/BuyMetadog'
 import StartPlaying from '../sections/Index/StartPlaying'
 import FaqSection from '../sections/Index/FaqSection'
+import FooterSection from '../sections/Footer/FooterSection'
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
         <BuyMetadog/>
         <StartPlaying/>
         <FaqSection/>
+        <FooterSection/>
     </>
   )
 }
