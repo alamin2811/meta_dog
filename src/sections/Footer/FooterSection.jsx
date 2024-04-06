@@ -67,7 +67,10 @@ const FooterSection = () => {
                       {socialMediaData.map((socialMedia, index) => (
                         <li key={index}>
                           <a href={socialMedia.url} target="_blank">
-                            <img src={socialMedia.icon} alt="icon" />
+                            <span className='social-link'>
+                              <span className='social-icon'><img src={socialMedia.icon} alt="icon" /></span>
+                              <span className='social-icon'><img src={socialMedia.icon} alt="icon" /></span>
+                            </span>
                           </a>
                         </li>
                       ))}

@@ -9,56 +9,61 @@ import Dog4 from '../../assets/images/dogs/wif.png';
 import Dog5 from '../../assets/images/dogs/floki.png';
 import Dog6 from '../../assets/images/dogs/bonk.png';
 
-import rankDog1 from '../../assets/images/dogs/floki1.png';
+import wif from '../../assets/images/dogs/wif_1.png';
+import shiba from '../../assets/images/dogs/shiba_2.png';
+import floki from '../../assets/images/dogs/floki_3.png';
+import doge from '../../assets/images/dogs/doge_4.png';
+import bonk from '../../assets/images/dogs/bonk_5.png';
+import myro from '../../assets/images/dogs/myro_6.png';
 
 const DogData = [
     {
-        dogNumber: 'dog1',
-        dogImg: Dog1,
-        dogImg2: Dog1,
-        rank: '1',
-        dogName: 'Shiba',
-        description: 'Stated as a meme token and now creating a whole ecosystem that is been fuelled by dog token.',
-    },
-    {
-        dogNumber: 'dog2',
-        dogImg: Dog2,
-        dogImg2: Dog2,
-        rank: '2',
-        dogName: 'Doge',
-        description: 'Stated as a meme token and now creating a whole ecosystem that is been fuelled by dog token.',
-    },
-    {
-        dogNumber: 'dog3',
-        dogImg: Dog3,
-        dogImg2: Dog3,
-        rank: '3',
-        dogName: 'Myro',
-        description: 'Stated as a meme token and now creating a whole ecosystem that is been fuelled by dog token.',
-    },
-    {
         dogNumber: 'dog4',
         dogImg: Dog4,
-        dogImg2: Dog4,
-        rank: '4',
+        dogImg2: wif,
+        rank: '1',
         dogName: 'Wif',
-        description: 'Stated as a meme token and now creating a whole ecosystem that is been fuelled by dog token.',
+        description: 'Dog with hat is a recent dog meme that has established itself as a top dog token.',    
+    },
+    {
+        dogNumber: 'dog1',
+        dogImg: Dog1,
+        dogImg2: shiba,
+        rank: '2',
+        dogName: 'Shiba',
+        description: 'Made it wave in 2021 and still growing hard as the top dog token after doge.',
     },
     {
         dogNumber: 'dog5',
         dogImg: Dog5,
-        dogImg2: rankDog1,
-        rank: '5',
+        dogImg2: floki,
+        rank: '3',
         dogName: 'Floki',
-        description: 'Stated as a meme token and now creating a whole ecosystem that is been fuelled by dog token.',
+        description: 'Stated as a meme token and now creating a whole ecosystem that is being fueled by dog token.',
+    },
+    {
+        dogNumber: 'dog2',
+        dogImg: Dog2,
+        dogImg2: doge,
+        rank: '4',
+        dogName: 'Doge',
+        description: "Elon's favorite dog token is on top as number 1 dog token",
     },
     {
         dogNumber: 'dog6',
         dogImg: Dog6,
-        dogImg2: Dog6,
-        rank: '6',
+        dogImg2: bonk,
+        rank: '5',
         dogName: 'Bonk',
-        description: 'Stated as a meme token and now creating a whole ecosystem that is been fuelled by dog token.',
+        description: 'The first dog token on solana to make wave and reach 1b market cap.',
+    },
+    {
+        dogNumber: 'dog3',
+        dogImg: Dog3,
+        dogImg2: myro,
+        rank: '6',
+        dogName: 'Myro',
+        description: 'Solana founder dog token also made it to metadog race.',
     },
 ]
 

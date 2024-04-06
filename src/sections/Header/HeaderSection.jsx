@@ -9,7 +9,7 @@ const navItems = [
 ];
 
 const buttons = [
-    { text: 'Buy $xdog', className: 'buy-btn header-btn btn' },
+    { text: 'Buy Metadog', className: 'buy-btn header-btn btn' },
     { text: 'Play Now', className: 'play-btn header-btn btn' }
 ];
 

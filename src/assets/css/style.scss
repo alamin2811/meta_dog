@@ -168,7 +168,7 @@ button {
         gap: 20px;
 
         .header-btn {
-            width: 130px;
+            padding: 2px 24px;
             height: 50px;
             font-family: "Space Grotesk";
             font-size: 16px;
@@ -289,7 +289,7 @@ button {
 
     h1 {
         margin-top: 40px;
-        margin-bottom: 60px;
+        margin-bottom: 45px;
         text-transform: uppercase;
 
         span {
@@ -1498,6 +1498,27 @@ button {
                 height: 70px;
                 width: 70px;
                 overflow: hidden;
+                .social-link{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    overflow: hidden;
+                    height: 20px;
+                    .social-icon{
+                        transition: 0.4s;
+                        min-height: 22px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                    }
+                }
+                &:hover{
+                    background: rgba(255, 255, 255, 0.1);
+                    .social-icon{
+                        transform: translateY(-22px);
+                    }
+                }
             }
         }
     }

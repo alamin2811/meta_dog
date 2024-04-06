@@ -8,6 +8,7 @@ const RoadmapSection = () => {
     const roadmapData = [
         {
             quarter: 'Q3-Q4 2023',
+            titleClass: 'title-green',
             tasks: [
                 { title: 'Social media & Website release', done: true },
                 { title: 'Token Launch & Liquidity Lock', done: true },
@@ -16,6 +17,7 @@ const RoadmapSection = () => {
         },
         {
             quarter: 'Q4-Q1 (2023-2024)',
+            titleClass: 'title-green',
             tasks: [
                 { title: 'MetaDog Game Main launch', done: true },
                 { title: 'Telegram bot Launch', done: true },
@@ -55,7 +57,7 @@ const RoadmapSection = () => {
                         {roadmapData.map((item, index) => (
                             <div className="col-md-3 pb-4" key={index}>
                                 <div className="roadmap-card">
-                                    <h5 className={`card-title ${item.quarter.includes('Q2') ? 'title-spin' : 'title-green'}`}>
+                                    <h5 className={`card-title ${item.titleClass}`}>
                                         {item.quarter}
                                         {item.quarter.includes('Q2') && <img src={spinIcon} alt="icon" className='spin' />}
                                     </h5>
