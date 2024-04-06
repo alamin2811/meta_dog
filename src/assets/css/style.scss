@@ -1331,4 +1331,103 @@ button {
     background: linear-gradient(105deg, rgba(255, 255, 255, 0.10) 0%, rgba(6, 13, 191, 0.00) 60.52%, rgba(255, 255, 255, 0.00) 60.52%);
     padding: 80px 40px;
 }
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+.footer-left{
+    p{
+        color: rgba(255, 255, 255, 0.90);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 216px;
+        width: 100%;
+        a{
+            color: rgba(255, 255, 255, 0.90);
+            text-decoration: none;
+        }
+    }
+    .footer-menu{
+        padding-left: 20px;
+        ul{
+            li{
+                margin-bottom: 20px;
+                a{
+                    color: rgba(255, 255, 255, 0.90);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.footer-right{
+    h3{
+        margin-bottom: 0px;
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 55px;
+        text-transform: uppercase;
+    }
+}
+.footer-social-list{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 16px;
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(2.5px);
+                height: 70px;
+                width: 70px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.footer-right-bottom-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.footer-right-bottom-left{
+    max-width: 304px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    img{
+        min-width: 50px;
+        max-width: 50px;
+    }
+    p{
+        color: #FFF;
+        font-family: "Space Grotesk";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+}
 /*-- footer style end --*/

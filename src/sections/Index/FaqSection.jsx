@@ -30,7 +30,7 @@ const FaqSection = () => {
     ];
 
     return (
-        <div className='faq-section'>
+        <div className='faq-section' id='fqSection'>
             <div className="container">
                 <div className="section-title text-center">
                     <h2 className='subtitle'>Frequently Asked Questions</h2>
