@@ -40,8 +40,8 @@ const RoadmapSection = () => {
                                 <ul className='custom-list'>
                                     <li className='done'>Game Update release</li>
                                     <li className='done'>Promoton & Marketing</li>
-                                    <li>Revenue Distribution to Token Holders</li>
-                                    <li>NFT Airdrop</li>
+                                    <li className='not-done'>Revenue Distribution to Token Holders</li>
+                                    <li className='not-done'>NFT Airdrop</li>
                                 </ul>
                             </div>
                         </div>
@@ -49,10 +49,10 @@ const RoadmapSection = () => {
                             <div className="roadmap-card">
                                 <h5 className='card-title'>Q3- 2024</h5>
                                 <ul className='custom-list'>
-                                    <li>Additional MetaDog Game release</li>
-                                    <li>Revenue Distribution to Token Holders</li>
-                                    <li>Promotion & Marketing</li>
-                                    <li>Game UI Update</li>
+                                    <li className='not-done'>Additional MetaDog Game release</li>
+                                    <li className='not-done'>Revenue Distribution to Token Holders</li>
+                                    <li className='not-done'>Promotion & Marketing</li>
+                                    <li className='not-done'>Game UI Update</li>
                                 </ul>
                             </div>
                         </div>

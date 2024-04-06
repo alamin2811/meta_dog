@@ -17,14 +17,19 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Space Grotesk";
   font-weight: 700;
 }
 
 h1 {
   font-size: 80px;
-  line-height: 120%;
+  line-height: 115%;
 }
 
 h2 {
@@ -164,12 +169,16 @@ button {
 
 /*-- header style end --*/
 /*-- section title style start --*/
+.section-title {
+  position: relative;
+  z-index: 11;
+}
 .section-title .title {
   color: #F3F302;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.section-title .sub-title {
+.section-title .subtitle {
   color: #FFFFFF;
   font-weight: 700;
   margin-bottom: 0px;
@@ -188,7 +197,7 @@ button {
 .banner-section::before {
   content: "";
   border-radius: 400px;
-  background: rgba(243, 243, 2, 0.8);
+  background: #0F1892;
   filter: blur(250px);
   height: 400px;
   width: 400px;
@@ -359,7 +368,7 @@ button {
 /*-- feature style end --*/
 /*-- About style start --*/
 .about-section {
-  padding-bottom: 130px;
+  padding-bottom: 60px;
 }
 
 .about-card {
@@ -390,6 +399,144 @@ button {
 }
 
 /*-- About style end --*/
+/*-- meet-racing-dog-section start --*/
+.meet-racing-dog-section {
+  background: url(../images/bg/race-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.meet-racing-dog-section .overlay {
+  background: linear-gradient(180deg, #12142A 0%, rgba(18, 20, 42, 0.05) 47%, #111330 100%);
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+.race-section {
+  height: 572px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.race-section .dog {
+  position: absolute;
+}
+.race-section .dog1 {
+  right: 10%;
+  bottom: 0%;
+}
+.race-section .dog2 {
+  top: 20%;
+  right: 20%;
+}
+.race-section .dog3 {
+  left: 40%;
+  top: 50%;
+}
+.race-section .dog4 {
+  top: 20%;
+  left: 30%;
+}
+.race-section .dog5 {
+  bottom: -5%;
+  left: 25%;
+}
+.race-section .dog6 {
+  top: 45%;
+  left: 10%;
+}
+.race-section .dog .dog-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.race-section .dog .dog-detail {
+  position: absolute;
+  bottom: 65%;
+  z-index: 11;
+  height: 0px;
+  overflow: hidden;
+  width: 320px;
+  background: url(../images/bg/dog-detail-bg.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.race-section .dog .dog-detail .detail-dog-img {
+  max-width: 100%;
+}
+.race-section .dog .dog-detail .detail-dog-img img {
+  width: 100%;
+}
+.race-section .dog .dog-detail h2 {
+  color: #FFF;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 50%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.race-section .dog .dog-detail h2 span {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-left: 20px;
+}
+.race-section .dog .dog-detail p {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Lexend;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.race-section .dog .dog-detail:hover {
+  height: 452px;
+  padding: 30px 25px 50px 25px;
+}
+.race-section .dog .dog-dots {
+  height: 22px;
+  width: 22px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.race-section .dog .dog-dots .dots-inner {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+.race-section .dog .dog-dots:hover {
+  border: 2px solid rgba(243, 243, 2, 0.5098039216);
+}
+.race-section .dog .dog-dots:hover .dots-inner {
+  background: #F3F302;
+}
+.race-section .dog .dog-dots:hover ~ .dog-detail {
+  height: 452px;
+  padding: 30px 25px 50px 25px;
+}
+
+/*-- meet-racing-dog-section end --*/
 /*-- Roadmap style start --*/
 .roadmap-content {
   background: linear-gradient(180deg, #12142A 0%, rgba(18, 20, 42, 0) 47%, #12142A 100%);
@@ -497,3 +644,415 @@ button {
 }
 
 /*-- Roadmap style end --*/
+/*-- tokenomics style start --*/
+.tokenomics-section {
+  padding-bottom: 130px;
+  background: linear-gradient(180deg, rgba(3, 6, 89, 0) 0%, #030659 40%, #030659 58%, rgba(3, 6, 89, 0) 100%);
+}
+.tokenomics-section .tokenomics-content p {
+  max-width: 523px;
+  width: 1005;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.tokenomics-chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+}
+.tokenomics-chart img {
+  width: 90%;
+}
+
+.tokenomics-data-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.tokenomics-data-section .tokenomics-left {
+  width: 33.33%;
+}
+.tokenomics-data-section .tokenomics-center {
+  width: 33.33%;
+}
+.tokenomics-data-section .tokenomics-right {
+  width: 33.33%;
+}
+.tokenomics-data-section .tokenomics-right .tokenomics-data h6 {
+  flex-direction: row-reverse;
+}
+.tokenomics-data-section .tokenomics-data h6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 40px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0px;
+}
+.tokenomics-data-section .tokenomics-data h6:nth-last-child(1) {
+  border: none;
+}
+.tokenomics-data-section .wallte-address {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 10px;
+  margin-top: 40px;
+}
+.tokenomics-data-section .wallte-address h5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 0px;
+}
+.tokenomics-data-section .wallte-address h5 .token-assress {
+  position: relative;
+}
+.tokenomics-data-section .wallte-address h5 .token-assress::after {
+  position: absolute;
+  content: ":";
+  left: -20px;
+}
+.tokenomics-data-section .wallte-address.left .copy-address {
+  position: absolute;
+  right: 0px;
+}
+.tokenomics-data-section .wallte-address.right {
+  flex-direction: row-reverse;
+}
+.tokenomics-data-section .wallte-address.right .copy-address {
+  position: absolute;
+  left: 0px;
+}
+.tokenomics-data-section .wallte-address.right h5 {
+  flex-direction: row-reverse;
+}
+.tokenomics-data-section .wallte-address.right h5 .token-assress::after {
+  content: ":";
+  right: -20px;
+  left: auto;
+}
+
+/*-- tokenomics style end --*/
+/*-- affiliate-section style start --*/
+.affiliate-section {
+  padding-top: 170px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.affiliate-section::after {
+  content: "";
+  position: absolute;
+  bottom: -40%;
+  height: 232px;
+  width: 232px;
+  background: #BC000E;
+  filter: blur(175px);
+  z-index: 1;
+}
+
+.affiliate-text {
+  max-width: 619px;
+  width: 100%;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+.affiliate-text h4 {
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+.affiliate-text .join-btn {
+  width: 180px;
+  height: 60px;
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  position: relative;
+  color: #111;
+  background: #F3F302;
+}
+.affiliate-text .join-btn::after {
+  content: url(../images/icons/btn-shape2.svg);
+  position: absolute;
+  bottom: -6px;
+}
+
+.affiliate-img {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/*-- affiliate-section style End --*/
+/*-- buy-metadog-section style start --*/
+.buy-metadog-section {
+  padding-top: 170px;
+  position: relative;
+  z-index: 1;
+}
+
+.buy-metadog-text {
+  max-width: 565px;
+  width: 100%;
+  margin-left: auto;
+}
+.buy-metadog-text .section-title {
+  max-width: 476px;
+}
+.buy-metadog-text p {
+  margin: 35px 0px 45px 0px;
+}
+.buy-metadog-text .buy-metadog-btn {
+  width: 180px;
+  height: 60px;
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  position: relative;
+  color: #111;
+  background: #F3F302;
+}
+.buy-metadog-text .buy-metadog-btn::after {
+  content: url(../images/icons/btn-shape2.svg);
+  position: absolute;
+  bottom: -6px;
+}
+
+.buy-metadog-img {
+  text-align: center;
+}
+
+/*-- buy-metadog-section style End --*/
+/*-- start-playing-section style Start --*/
+.start-playing-section {
+  padding-top: 190px;
+  padding-bottom: 130px;
+  position: relative;
+}
+.start-playing-section .start-play-bg {
+  position: absolute;
+  z-index: 0;
+  top: -15%;
+  width: 100%;
+  left: 0px;
+}
+
+.start-playing-content {
+  position: relative;
+  z-index: 1;
+}
+.start-playing-content h2 {
+  max-width: 476px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.start-playing-content p {
+  max-width: 696px;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.start-playing-img {
+  max-width: 603px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.start-playing-img .laptop-img {
+  width: 100%;
+}
+.start-playing-img .dog-img {
+  position: absolute;
+  top: 15%;
+  right: -18%;
+}
+
+.start-playing-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.start-playing-btns .playing-btn {
+  width: 180px;
+  height: 60px;
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  position: relative;
+}
+.start-playing-btns .playing-btn.play-btn {
+  color: #111;
+  background: #F3F302;
+}
+.start-playing-btns .playing-btn.play-btn::after {
+  content: url(../images/icons/btn-shape2.svg);
+  position: absolute;
+  bottom: -6px;
+}
+.start-playing-btns .playing-btn.buy-btn {
+  color: #F3F302;
+  border: 2px solid rgba(243, 243, 2, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.start-playing-btns .playing-btn.buy-btn::after {
+  content: url(../images/icons/btn-shape1.svg);
+  position: absolute;
+  bottom: -6px;
+}
+
+/*-- start-playing-section style End --*/
+/*-- faq style start --*/
+.faq-section {
+  background: linear-gradient(180deg, rgba(3, 6, 89, 0) 0%, #030659 40%, #030659 58%, rgba(3, 6, 89, 0) 100%);
+  padding-bottom: 321px;
+  position: relative;
+  z-index: 0;
+}
+.faq-section .section-title {
+  max-width: 465px;
+  width: 100%;
+  margin: auto;
+}
+
+.faq-content {
+  max-width: 770px;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.metadog-accordion-item {
+  background-color: transparent;
+  border-radius: 20px !important;
+  overflow: hidden;
+  border: none;
+  margin-bottom: 15px;
+  background: transparent;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+.metadog-accordion-item .accordion-header .accordion-button {
+  background: transparent;
+  position: inherit;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: #FFFFFF !important;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 15px 30px;
+  height: 70px;
+}
+.metadog-accordion-item .accordion-header .accordion-button:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.metadog-accordion-item .accordion-header .accordion-button::before {
+  content: url(../images/icons/plus.svg);
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  transition: 0.3s;
+}
+.metadog-accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #111;
+}
+.metadog-accordion-item .accordion-header .accordion-button:not(.collapsed) .shape {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 30%;
+  z-index: 0;
+}
+.metadog-accordion-item .accordion-header .accordion-button:not(.collapsed) .shape.left {
+  border-radius: 20px 0px 0px 20px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  left: 0px;
+}
+.metadog-accordion-item .accordion-header .accordion-button:not(.collapsed) .shape.right {
+  border-radius: 0px 20px 20px 0px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+  right: 0px;
+}
+.metadog-accordion-item .accordion-header .accordion-button:not(.collapsed)::before {
+  top: 26px;
+  transform: rotate(180deg);
+  content: url(../images/icons/minus.svg);
+}
+.metadog-accordion-item .accordion-header .accordion-button::after {
+  display: none !important;
+}
+
+.metadog-accordion-body {
+  padding: 0px 30px 35px 30px;
+  position: relative;
+  z-index: 1;
+}
+.metadog-accordion-body p {
+  margin-bottom: 0px;
+  font-weight: 500;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/*-- faq style end --*/
