@@ -1,9 +1,48 @@
-import React from 'react'
+import React from 'react';
 import SectionTitle from './../../components/SectionTitle';
-import roadmapShape from '../../assets/images/bg/road_img.png'
-import spinIcon from '../../assets/images/icons/spin.png'
+import roadmapShape from '../../assets/images/bg/road_img.png';
+import spinIcon from '../../assets/images/icons/spin.png';
 
 const RoadmapSection = () => {
+    // Define roadmap data as an array of objects
+    const roadmapData = [
+        {
+            quarter: 'Q3-Q4 2023',
+            tasks: [
+                { title: 'Social media & Website release', done: true },
+                { title: 'Token Launch & Liquidity Lock', done: true },
+                { title: 'MetaDog RACING BETA VERSION 1.0 MetaDog', done: true }
+            ]
+        },
+        {
+            quarter: 'Q4-Q1 (2023-2024)',
+            tasks: [
+                { title: 'MetaDog Game Main launch', done: true },
+                { title: 'Telegram bot Launch', done: true },
+                { title: 'Community AMA on Twitter', done: true },
+                { title: 'In Game Reward', done: true }
+            ]
+        },
+        {
+            quarter: 'Q2- 2024',
+            tasks: [
+                { title: 'Game Update release', done: true },
+                { title: 'Promoton & Marketing', done: true },
+                { title: 'Revenue Distribution to Token Holders', done: false },
+                { title: 'NFT Airdrop', done: false }
+            ]
+        },
+        {
+            quarter: 'Q3- 2024',
+            tasks: [
+                { title: 'Additional MetaDog Game release', done: false },
+                { title: 'Revenue Distribution to Token Holders', done: false },
+                { title: 'Promotion & Marketing', done: false },
+                { title: 'Game UI Update', done: false }
+            ]
+        }
+    ];
+
     return (
         <div className='roadmap-section'>
             <div className="container">
@@ -13,54 +52,26 @@ const RoadmapSection = () => {
                 <div className="shape"><img src={roadmapShape} alt="shape" /></div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-3 pb-4">
-                            <div className="roadmap-card">
-                                <h5 className='card-title title-green'>Q3-Q4 2023</h5>
-                                <ul className='custom-list'>
-                                    <li className='done'>Social media & Website release</li>
-                                    <li className='done'>Token Launch & Liquidity Lock</li>
-                                    <li className='done'>MetaDog RACING BETA VERSION 1.0 MetaDog</li>
-                                </ul>
+                        {roadmapData.map((item, index) => (
+                            <div className="col-md-3 pb-4" key={index}>
+                                <div className="roadmap-card">
+                                    <h5 className={`card-title ${item.quarter.includes('Q2') ? 'title-spin' : 'title-green'}`}>
+                                        {item.quarter}
+                                        {item.quarter.includes('Q2') && <img src={spinIcon} alt="icon" className='spin' />}
+                                    </h5>
+                                    <ul className='custom-list'>
+                                        {item.tasks.map((task, idx) => (
+                                            <li key={idx} className={task.done ? 'done' : 'not-done'}>{task.title}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-3 pb-4">
-                            <div className="roadmap-card">
-                                <h5 className='card-title title-green'>Q4-Q1 (2023-2024)</h5>
-                                <ul className='custom-list'>
-                                    <li className='done'>MetaDog Game Main launch</li>
-                                    <li className='done'>Telegram bot Launch</li>
-                                    <li className='done'>Community AMA on Twitter</li>
-                                    <li className='done'>In Game Reward</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-md-3 pb-4">
-                            <div className="roadmap-card">
-                                <h5 className='card-title'>Q2- 2024 <img src={spinIcon} alt="icon" className='spin' /></h5>
-                                <ul className='custom-list'>
-                                    <li className='done'>Game Update release</li>
-                                    <li className='done'>Promoton & Marketing</li>
-                                    <li className='not-done'>Revenue Distribution to Token Holders</li>
-                                    <li className='not-done'>NFT Airdrop</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-md-3 pb-4">
-                            <div className="roadmap-card">
-                                <h5 className='card-title'>Q3- 2024</h5>
-                                <ul className='custom-list'>
-                                    <li className='not-done'>Additional MetaDog Game release</li>
-                                    <li className='not-done'>Revenue Distribution to Token Holders</li>
-                                    <li className='not-done'>Promotion & Marketing</li>
-                                    <li className='not-done'>Game UI Update</li>
-                                </ul>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default RoadmapSection
+export default RoadmapSection;

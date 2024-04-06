@@ -1,14 +1,29 @@
-import React from 'react'
-import copyIcon from '../assets/images/icons/copy-icon.svg'
+import React, { useState } from 'react';
+import copyIcon from '../assets/images/icons/copy-icon.svg';
 
-const TokenAddress = ({coinImg, address, parentClass}) => {
+const TokenAddress = ({ coinImg, address, parentClass }) => {
+    const [copied, setCopied] = useState(false);
+
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(address);
+        setCopied(true);
+        setTimeout(() => {
+            setCopied(false);
+        }, 3000);
+    };
+
     return (
         <div className={`wallte-address ${parentClass}`}>
-            <img src={coinImg} alt="icon" coin-img />
-            <h5><span>Token Address</span> <span className='token-assress'>{address}</span></h5>
-            <span className='copy-address'><img src={copyIcon} alt="copy" /></span>
+            <img src={coinImg} alt="icon" className='coin-img' />
+            <h5>
+                <span>Token Address</span>
+                <span className='token-address'>{address}</span>
+            </h5>
+            <span className='copy-address' onClick={copyToClipboard}>
+                {copied ? <img src={copyIcon} alt="copy" /> : <img src={copyIcon} alt="copy" />}
+            </span>
         </div>
-    )
-}
+    );
+};
 
-export default TokenAddress
+export default TokenAddress;

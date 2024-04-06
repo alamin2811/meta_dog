@@ -1,6 +1,34 @@
-import React from 'react'
+import React from 'react';
 
 const FaqSection = () => {
+    // Array of FAQ objects
+    const faqs = [
+        {
+            question: 'What are the benefits of treaders?',
+            answer: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example. which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.',
+        },
+        {
+            question: 'Does MetaDog support all networks?',
+            answer: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example. which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.',
+        },
+        {
+            question: 'Why should we choose MetaDog?',
+            answer: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example. which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.',
+        },
+        {
+            question: 'Is this support fiat payment?',
+            answer: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example. which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.',
+        },
+        {
+            question: 'How secure is this token?',
+            answer: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example. which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.',
+        },
+        {
+            question: 'What is your contract address?',
+            answer: 'Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example. which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.',
+        },
+    ];
+
     return (
         <div className='faq-section'>
             <div className="container">
@@ -8,109 +36,30 @@ const FaqSection = () => {
                     <h2 className='subtitle'>Frequently Asked Questions</h2>
                 </div>
                 <div className="faq-content">
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item metadog-accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    What the benefits of treaders ?
-                                    <span className="shape left"></span>
-                                    <span className="shape right"></span>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body metadog-accordion-body">
-                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example.
-                                        which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.</p>
+                    <div className="accordion" id="accordionExample">
+                        {/* Mapping over the FAQ array to render each FAQ item */}
+                        {faqs.map((faq, index) => (
+                            <div className="accordion-item metadog-accordion-item" key={index}>
+                                <h2 className="accordion-header">
+                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target={`#collapse${index}`} aria-expanded="false" aria-controls={`collapse${index}`}>
+                                        {faq.question}
+                                        <span className="shape left"></span>
+                                        <span className="shape right"></span>
+                                    </button>
+                                </h2>
+                                <div id={`collapse${index}`} className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div className="accordion-body metadog-accordion-body">
+                                        <p>{faq.answer}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item metadog-accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Does MetaDog support all network ?
-                                    <span className="shape left"></span>
-                                    <span className="shape right"></span>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body metadog-accordion-body">
-                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example.
-                                        which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item metadog-accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Why we should choose MetaDog ?
-                                    <span className="shape left"></span>
-                                    <span className="shape right"></span>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body metadog-accordion-body">
-                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example.
-                                        which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item metadog-accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Is this support fiat payment ?
-                                    <span className="shape left"></span>
-                                    <span className="shape right"></span>
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body metadog-accordion-body">
-                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example.
-                                        which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item metadog-accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How secure is this token ?
-                                    <span className="shape left"></span>
-                                    <span className="shape right"></span>
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body metadog-accordion-body">
-                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example.
-                                        which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item metadog-accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    What is your contract address ?
-                                    <span className="shape left"></span>
-                                    <span className="shape right"></span>
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body metadog-accordion-body">
-                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can Launchpad him some great pleasure. To take a trivial example.
-                                        which of us ever Votting laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.</p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default FaqSection
+export default FaqSection;
