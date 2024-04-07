@@ -55,7 +55,7 @@ const RoadmapSection = () => {
                 <div className="container">
                     <div className="row">
                         {roadmapData.map((item, index) => (
-                            <div className="col-md-3 pb-4" key={index}>
+                            <div className="col-lg-3 col-sm-6 pb-4" key={index}>
                                 <div className="roadmap-card">
                                     <h5 className={`card-title ${item.titleClass}`}>
                                         {item.quarter}

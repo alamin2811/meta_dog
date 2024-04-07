@@ -31,7 +31,7 @@ const Feature = () => {
             <div className="container">
                 <div className="row">
                     {featuresData.map((feature, index) => (
-                        <div key={index} className="col-md-4">
+                        <div key={index} className="col-lg-4 col-sm-6 pb-4">
                             <div className={`feature-card feature-card${index + 1}`}>
                                 <div className="feature-icon">
                                     <img src={feature.icon} alt="icon" />

@@ -14,20 +14,20 @@ import FooterSection from '../sections/Footer/FooterSection'
 
 const HomePage = () => {
   return (
-    <>
-        <HeaderSection/>
-        <BannerSection/>
-        <Feature/>
-        <AboutSection/>
-        <MeetRacingDog/>
-        <Tokenomics/>
-        <RoadmapSection/>
-        <Affiliate/>
-        <BuyMetadog/>
-        <StartPlaying/>
-        <FaqSection/>
-        <FooterSection/>
-    </>
+    <div className="body-container">
+      <HeaderSection />
+      <BannerSection />
+      <Feature />
+      <AboutSection />
+      <MeetRacingDog />
+      <Tokenomics />
+      <RoadmapSection />
+      <Affiliate />
+      <BuyMetadog />
+      <StartPlaying />
+      <FaqSection />
+      <FooterSection />
+    </div>
   )
 }
 

@@ -17,6 +17,9 @@ body {
     line-height: 200%;
     box-sizing: border-box;
 }
+.body-container{
+    overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -61,16 +64,14 @@ button {
     border: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 .custom-list {
     list-style: none;
     padding: 0px;
     margin: 0px;
-}
-
-.container {
-    max-width: 1210px;
-    margin: auto;
-    padding: 0px 20px;
 }
 
 /*-- animetion style start--*/
@@ -416,7 +417,7 @@ button {
 
 /*-- feature style start --*/
 .feature-section {
-    padding-bottom: 130px;
+    padding-bottom: 110px;
 }
 
 .feature-card {
@@ -897,7 +898,7 @@ button {
     .tokenomics-content {
         p {
             max-width: 523px;
-            width: 1005;
+            width: 100%;
             margin: auto;
             margin-top: 60px;
             margin-bottom: 10px;

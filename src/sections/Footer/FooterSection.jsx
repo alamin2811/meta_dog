@@ -34,7 +34,7 @@ const FooterSection = () => {
         <div className="container">
           <div className="footer-card">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="footer-left">
                   <a href='#' className="footer-logo">
                     <img src={logo} alt="logo" />
@@ -58,7 +58,7 @@ const FooterSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
+              <div className="col-lg-6">
                 <div className="footer-right">
                   <h3>Official Community</h3>
                   <div className="footer-social-list">
