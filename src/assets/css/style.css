@@ -431,9 +431,16 @@ img {
   padding-bottom: 110px;
 }
 
+.feature-card-section {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .feature-card {
   border-radius: 20px;
-  border: 2px solid rgba(255, 255, 255, 0.0117647059);
+  border: 1px solid transparent;
+  -o-border-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.03)) 1;
+     border-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.03)) 1;
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.05) 100%);
   padding: 35px 30px 40px 30px;
   position: relative;
@@ -442,6 +449,7 @@ img {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .feature-card .feature-icon {
   margin-bottom: 15px;
@@ -538,6 +546,16 @@ img {
   font-weight: 400;
   line-height: 30px;
 }
+.about-card .about-text .show-more {
+  color: #F3F302;
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0px;
+  display: none;
+}
 .about-card .about-us-content {
   margin-top: 40px;
 }
@@ -589,6 +607,16 @@ img {
 .race-section .dog6 {
   top: 45%;
   left: 10%;
+}
+.race-section .dog:hover .dog-detail {
+  height: 470px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  animation: dogDetailShow 0.2s linear;
+  opacity: 1;
+  overflow: visible;
+}
+.race-section .dog:hover .dog-detail .dog-detail-inner {
+  opacity: 1;
 }
 .race-section .dog .dog-inner {
   position: relative;
@@ -648,11 +676,9 @@ img {
   border-top: 20px solid rgba(255, 255, 255, 0.3);
   border-radius: 0px;
 }
-.race-section .dog .dog-detail .detail-dog-img {
-  max-width: 100%;
-}
 .race-section .dog .dog-detail .detail-dog-img img {
-  width: 100%;
+  width: auto;
+  max-width: none !important;
 }
 .race-section .dog .dog-detail h2 {
   color: #FFF;
@@ -660,7 +686,7 @@ img {
   font-weight: 700;
   line-height: 50%;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 .race-section .dog .dog-detail h2 span {
   font-size: 36px;
@@ -712,16 +738,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.dog-detail-section:hover .dog-detail {
-  height: 450px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  animation: dogDetailShow 0.2s linear;
-  opacity: 1;
-  overflow: visible;
-}
-.dog-detail-section:hover .dog-detail .dog-detail-inner {
-  opacity: 1;
 }
 
 @keyframes dogDots {

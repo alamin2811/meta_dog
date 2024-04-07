@@ -9,7 +9,7 @@ const featuresData = [
         icon: icon1,
         description: 'Buy, hold $MetaDog & participate in our revenue sharing',
         link: '#',
-        buttonText: 'Buy $xdog'
+        buttonText: 'BUY METADOG'
     },
     {
         icon: icon2,
@@ -32,12 +32,14 @@ const Feature = () => {
                 <div className="row">
                     {featuresData.map((feature, index) => (
                         <div key={index} className="col-lg-4 col-sm-6 pb-4">
-                            <div className={`feature-card feature-card${index + 1}`}>
-                                <div className="feature-icon">
-                                    <img src={feature.icon} alt="icon" />
+                            <div className="feature-card-section">
+                                <div className={`feature-card feature-card${index + 1}`}>
+                                    <div className="feature-icon">
+                                        <img src={feature.icon} alt="icon" />
+                                    </div>
+                                    <p>{feature.description}</p>
+                                    {feature.link && <a href={feature.link}>{feature.buttonText}<img src={arrow} alt="icon" /></a>}
                                 </div>
-                                <p>{feature.description}</p>
-                                {feature.link && <a href={feature.link}>{feature.buttonText}<img src={arrow} alt="icon" /></a>}
                             </div>
                         </div>
                     ))}

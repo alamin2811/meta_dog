@@ -158,6 +158,27 @@
         justify-content: flex-start;
         margin-top: 50px;
     }
+    .about-card {
+        background: url(../images/bg/about-bg-phn.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        .overlay{
+            padding-top: 237px !important;
+            background: linear-gradient(180deg, rgba(3, 6, 89, 0.00) 0%, #030659 48.82%);
+        }
+        .about-text{
+            text-align: left;
+            p{
+                &.hide{
+                    display: none;
+                }
+            }
+            .show-more{
+                display: block;
+            }
+        }
+    }
     .tokenomics-data-section {
         flex-wrap: wrap;
         .tokenomics{
@@ -238,6 +259,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .tokenomics-section {
+        .tokenomics-content {
+            p{
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
     .buy-metadog-text {
         .section-title{
             margin: auto;
@@ -380,6 +413,18 @@
 }
 
 @media only screen and (max-width: 575px) {
+    body{
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .tokenomics-section {
+        .tokenomics-content {
+            p{
+                font-size: 15px;
+                line-height: 30px;
+            }
+        }
+    }
     .banner-text {
         h1{
             font-size: 44px;
@@ -393,7 +438,7 @@
             font-size: 16px;
         }
         .subtitle{
-            font-size: 30px;
+            font-size: 34px;
         }
     }
     .start-playing-content {
@@ -405,7 +450,14 @@
         .overlay{
             padding: 50px 20px;
         }
+        .about-text {
+            p{
+                font-size: 15px;
+                line-height: 28px;
+            }
+        }
     }
+    
     .metadog-accordion-item{
         .accordion-header {
             .accordion-button{

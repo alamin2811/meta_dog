@@ -465,9 +465,14 @@ img{
     padding-bottom: 110px;
 }
 
+.feature-card-section{
+    overflow: hidden;
+    border-radius: 20px;
+}
 .feature-card {
     border-radius: 20px;
-    border: 2px solid #ffffff03;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.03)) 1;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.05) 100%);
     padding: 35px 30px 40px 30px;
     position: relative;
@@ -476,6 +481,7 @@ img{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 
     .feature-icon {
         margin-bottom: 15px;
@@ -587,6 +593,16 @@ img{
             font-weight: 400;
             line-height: 30px;
         }
+        .show-more{
+            color: #F3F302;
+            font-family: "Space Grotesk";
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-bottom: 0px;
+            display: none;
+        }
     }
 
     .about-us-content {
@@ -619,7 +635,6 @@ img{
 
     .dog {
         position: absolute;
-
         &1 {
             right: 10%;
             bottom: 0%;
@@ -648,6 +663,19 @@ img{
         &6 {
             top: 45%;
             left: 10%;
+        }
+        &:hover {
+            .dog-detail {
+                height: 470px;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                animation: dogDetailShow 0.2s linear;
+                opacity: 1;
+                overflow: visible;
+    
+                .dog-detail-inner {
+                    opacity: 1;
+                }
+            }
         }
 
         .dog-inner {
@@ -712,10 +740,9 @@ img{
             }
 
             .detail-dog-img {
-                max-width: 100%;
-
                 img {
-                    width: 100%;
+                    width: auto;
+                    max-width: none !important;
                 }
             }
 
@@ -725,7 +752,7 @@ img{
                 font-weight: 700;
                 line-height: 50%;
                 text-transform: uppercase;
-                margin-bottom: 30px;
+                margin-bottom: 16px;
 
                 span {
                     font-size: 36px;
@@ -786,20 +813,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &:hover {
-        .dog-detail {
-            height: 450px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            animation: dogDetailShow 0.2s linear;
-            opacity: 1;
-            overflow: visible;
-
-            .dog-detail-inner {
-                opacity: 1;
-            }
-        }
-    }
 }
 
 @keyframes dogDots {

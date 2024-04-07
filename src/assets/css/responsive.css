@@ -125,6 +125,25 @@
     justify-content: flex-start;
     margin-top: 50px;
   }
+  .about-card {
+    background: url(../images/bg/about-bg-phn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  .about-card .overlay {
+    padding-top: 237px !important;
+    background: linear-gradient(180deg, rgba(3, 6, 89, 0) 0%, #030659 48.82%);
+  }
+  .about-card .about-text {
+    text-align: left;
+  }
+  .about-card .about-text p.hide {
+    display: none;
+  }
+  .about-card .about-text .show-more {
+    display: block;
+  }
   .tokenomics-data-section {
     flex-wrap: wrap;
   }
@@ -185,6 +204,14 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .tokenomics-section .tokenomics-content p {
+    font-size: 16px;
+    line-height: 30px;
+  }
   .buy-metadog-text .section-title {
     margin: auto;
   }
@@ -302,6 +329,14 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  body {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .tokenomics-section .tokenomics-content p {
+    font-size: 15px;
+    line-height: 30px;
+  }
   .banner-text h1 {
     font-size: 44px;
   }
@@ -312,13 +347,17 @@
     font-size: 16px;
   }
   .section-title .subtitle {
-    font-size: 30px;
+    font-size: 34px;
   }
   .start-playing-content h2 {
     font-size: 32px;
   }
   .about-card .overlay {
     padding: 50px 20px;
+  }
+  .about-card .about-text p {
+    font-size: 15px;
+    line-height: 28px;
   }
   .metadog-accordion-item .accordion-header .accordion-button {
     font-size: 18px;
