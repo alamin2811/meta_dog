@@ -220,6 +220,35 @@ img{
         }
     }
 }
+.mobile-menu{
+    display: none;
+}
+.mobile-menu-content{
+    background: #12142A;
+    padding: 15px 30px;
+}
+.mobile-menu-body{
+    padding-top: 50px;
+    .header-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        ul{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        .header-btns{
+            flex-wrap: wrap;
+            .header-btn{
+                width: 100%;
+            }
+        }
+
+    }
+}
 
 /*-- header style end --*/
 

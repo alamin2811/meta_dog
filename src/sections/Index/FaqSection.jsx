@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const FaqSection = () => {
     // Array of FAQ objects
@@ -29,6 +29,9 @@ const FaqSection = () => {
         },
     ];
 
+    // State to track if the component has been rendered for the first time
+    const [firstRender, setFirstRender] = useState(true);
+
     return (
         <div className='faq-section' id='fqSection'>
             <div className="container">
@@ -41,14 +44,14 @@ const FaqSection = () => {
                         {faqs.map((faq, index) => (
                             <div className="accordion-item metadog-accordion-item" key={index}>
                                 <h2 className="accordion-header">
-                                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target={`#collapse${index}`} aria-expanded="false" aria-controls={`collapse${index}`}>
+                                    <button className={`accordion-button${firstRender && index === 0 ? '' : ' collapsed'}`} type="button" data-bs-toggle="collapse"
+                                        data-bs-target={`#collapse${index}`} aria-expanded={index === 0 || !firstRender ? 'true' : 'false'} aria-controls={`collapse${index}`}>
                                         {faq.question}
                                         <span className="shape left"></span>
                                         <span className="shape right"></span>
                                     </button>
                                 </h2>
-                                <div id={`collapse${index}`} className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div id={`collapse${index}`} className={`accordion-collapse collapse${index === 0 || !firstRender ? ' show' : ''}`} data-bs-parent="#accordionExample">
                                     <div className="accordion-body metadog-accordion-body">
                                         <p>{faq.answer}</p>
                                     </div>

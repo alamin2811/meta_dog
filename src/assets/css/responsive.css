@@ -104,6 +104,9 @@
   .header-right {
     display: none;
   }
+  .mobile-menu {
+    display: block;
+  }
   .banner-text {
     margin: auto;
     text-align: center;
@@ -150,13 +153,6 @@
   .race-section .dog .dog-inner {
     max-width: 70%;
   }
-  .race-section {
-    height: 572px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
   .race-section .dog {
     position: absolute;
   }
@@ -183,6 +179,9 @@
   .race-section .dog6 {
     top: 45%;
     left: 5%;
+  }
+  .start-playing-content h2 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -260,5 +259,90 @@
   }
   .start-playing-section {
     padding: 80px 0px;
+  }
+  .race-section .dog {
+    position: absolute;
+  }
+  .race-section .dog1 {
+    right: -10%;
+    bottom: 9%;
+  }
+  .race-section .dog2 {
+    top: 25%;
+    right: 0%;
+  }
+  .race-section .dog3 {
+    left: 30%;
+    top: 62%;
+  }
+  .race-section .dog4 {
+    top: 10%;
+    left: 36%;
+  }
+  .race-section .dog5 {
+    bottom: -5%;
+    left: 25%;
+  }
+  .race-section .dog6 {
+    top: 45%;
+    left: 30%;
+  }
+  .race-section .dog .dog-inner {
+    max-width: 50%;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer-right .footer-social-list ul {
+    max-width: 360px;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner-text h1 {
+    font-size: 44px;
+  }
+  .banner-text h3 {
+    font-size: 24px;
+  }
+  .section-title .title {
+    font-size: 16px;
+  }
+  .section-title .subtitle {
+    font-size: 30px;
+  }
+  .start-playing-content h2 {
+    font-size: 32px;
+  }
+  .about-card .overlay {
+    padding: 50px 20px;
+  }
+  .metadog-accordion-item .accordion-header .accordion-button {
+    font-size: 18px;
+    height: auto;
+  }
+  .metadog-accordion-body p {
+    font-size: 14px;
+  }
+  .footer-right h3 {
+    font-size: 27px;
+  }
+  .footer-right-bottom-left p {
+    font-size: 16px;
+    text-align: left;
+  }
+  .footer-bottom a {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .banner-text h1 {
+    font-size: 38px;
+  }
+  .footer-bottom a {
+    font-size: 13px;
   }
 }

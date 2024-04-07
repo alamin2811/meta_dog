@@ -137,6 +137,9 @@
     .header-right{
         display: none;
     }
+    .mobile-menu{
+        display: block;
+    }
     .banner-text {
         margin: auto;
         text-align: center;
@@ -184,7 +187,6 @@
             width: 60%;
         }
     }
-
     .race-section {
         .dog {
             .dog-inner{
@@ -192,13 +194,7 @@
             }
         }
     }
-    .race-section {
-        height: 572px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    
+    .race-section {    
         .dog {
             position: absolute;
     
@@ -232,6 +228,11 @@
                 left: 5%;
             }
 
+        }
+    }
+    .start-playing-content {
+        h2{
+            font-size: 40px;
         }
     }
 }
@@ -318,13 +319,130 @@
     .affiliate-section{
         padding-top: 60px;
     }
-    
     .start-playing-section{
         padding: 80px 0px;
+    }
+
+    .race-section {    
+        .dog {
+            position: absolute;
+            &1 {
+                right: -10%;
+                bottom: 9%;
+            }
+    
+            &2 {
+                top: 25%;
+                right: 0%;
+            }
+    
+            &3 {
+                left: 30%;
+                top: 62%
+            }
+    
+            &4 {
+                top: 10%;
+                left: 36%;
+            }
+    
+            &5 {
+                bottom: -5%;
+                left: 25%;
+            }
+    
+            &6 {
+                top: 45%;
+                left: 30%;
+            }
+            .dog-inner{
+                max-width: 50%;
+            }
+
+        }
+    }
+
+    .footer-bottom{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .footer-right {
+        .footer-social-list {
+            ul{
+                max-width: 360px;
+                width: 100%;
+                margin: auto;
+            }
+        }
     }
 
 }
 
 @media only screen and (max-width: 575px) {
-
+    .banner-text {
+        h1{
+            font-size: 44px;
+        }
+        h3{
+            font-size: 24px;
+        }
+    }
+    .section-title {
+        .title{
+            font-size: 16px;
+        }
+        .subtitle{
+            font-size: 30px;
+        }
+    }
+    .start-playing-content {
+        h2{
+            font-size: 32px;
+        }
+    }
+    .about-card{
+        .overlay{
+            padding: 50px 20px;
+        }
+    }
+    .metadog-accordion-item{
+        .accordion-header {
+            .accordion-button{
+                font-size: 18px;
+                height: auto;
+            }
+        }
+    }
+    .metadog-accordion-body {
+        p{
+            font-size: 14px;
+        }
+    }
+    .footer-right {
+        h3{
+            font-size: 27px;
+        }
+    }
+    .footer-right-bottom-left p{
+        font-size: 16px;
+        text-align: left;
+    }
+    .footer-bottom {
+        a{
+            font-size: 14px;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .banner-text {
+        h1{
+            font-size: 38px;
+        }
+    }
+    .footer-bottom {
+        a{
+            font-size: 13px;
+        }
+    }
 }
