@@ -27,7 +27,7 @@ const Tokenomics = () => {
                         <div className="tokenomics-data">
                             <h6><span>LP & CEX Listings</span> <span>50%</span></h6>
                             <h6><span>Presale</span> <span>35%</span></h6>
-                            <TokenAddress coinImg={ethIcon} address="0x59f4...40539a" parentClass="left" />
+                            <TokenAddress coinImg={ethIcon} address="0x3281Af86aBD6Ffe19d4Cc86399d3458ADA0e58dE" parentClass="left" />
                         </div>
                     </div>
                     <div className="tokenomics-center">
@@ -37,7 +37,7 @@ const Tokenomics = () => {
                         <div className="tokenomics-data">
                             <h6><span>Ecosystem Development</span> <span>10%</span></h6>
                             <h6><span>Game Rewards & Airdrop</span> <span>5%</span></h6>
-                            <TokenAddress coinImg={ethIcon} address="0x59f4...40539a" parentClass="right" />
+                            <TokenAddress coinImg={bnbIcon} address="0x3281Af86aBD6Ffe19d4Cc86399d3458ADA0e58dE" parentClass="right" />
                         </div>
                     </div>
                 </div>

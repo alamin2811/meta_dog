@@ -691,6 +691,7 @@ img {
   align-items: center;
   justify-content: center;
   position: absolute;
+  animation: dogDots 1.5s linear infinite;
 }
 .race-section .dog .dog-dots .dots-inner {
   height: 8px;
@@ -723,6 +724,18 @@ img {
   opacity: 1;
 }
 
+@keyframes dogDots {
+  0% {
+    height: 12px;
+    width: 12px;
+    opacity: 1;
+  }
+  100% {
+    height: 32px;
+    width: 32px;
+    opacity: 0;
+  }
+}
 @keyframes dogDetailShow {
   0% {
     opacity: 0;
