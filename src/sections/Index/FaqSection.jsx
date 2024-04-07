@@ -36,7 +36,7 @@ const FaqSection = () => {
         <div className='faq-section' id='fqSection'>
             <div className="container">
                 <div className="section-title text-center">
-                    <h2 className='subtitle'>Frequently Asked Questions</h2>
+                    <h2 className='subtitle uppercase'>Frequently Asked Questions</h2>
                 </div>
                 <div className="faq-content">
                     <div className="accordion" id="accordionExample">

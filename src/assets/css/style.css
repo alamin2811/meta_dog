@@ -210,6 +210,23 @@ img {
 .mobile-menu {
   display: none;
 }
+.mobile-menu .btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-menu .btn-close:hover {
+  opacity: 1;
+}
+
+.mobile-menu-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .mobile-menu-content {
   background: #12142A;

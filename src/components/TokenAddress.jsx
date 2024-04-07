@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import copyIcon from '../assets/images/icons/copy-icon.svg';
+import checkIcon from '../assets/images/icons/check.svg';
 
 const TokenAddress = ({ coinImg, address, parentClass }) => {
     const [copied, setCopied] = useState(false);
@@ -20,7 +21,7 @@ const TokenAddress = ({ coinImg, address, parentClass }) => {
                 <span className='token-address'>{address}</span>
             </h5>
             <span className='copy-address' onClick={copyToClipboard}>
-                {copied ? <img src={copyIcon} alt="copy" /> : <img src={copyIcon} alt="copy" />}
+                {copied ? <img src={checkIcon} alt="copy" /> : <img src={copyIcon} alt="copy" />}
             </span>
         </div>
     );
