@@ -5,6 +5,7 @@ import TokenomicsChart from '../../components/TokenomicsChart'
 
 import bnbIcon from '../../assets/images/coin/bnb.png'
 import ethIcon from '../../assets/images/coin/eth.png'
+import TokenomicsMobile from './TokenomicsMobile'
 
 const tokenomicsData = [
     { label: 'LP & CEX Listings', value: 50 },
@@ -20,7 +21,7 @@ const Tokenomics = () => {
             <SectionTitle
                 titlePosition="text-center" title="Metadog Numbers" subtitle="Tokenomics"
             />
-            <div className="tokenomics-content">
+            <div className="tokenomics-content tokenomics-content-desktop">
                 <p>METADOG token is going to be the native token of our ecosystem There will be 100 Billion of METADOG max token supply</p>
                 <div className="tokenomics-data-section">
                     <div className="tokenomics-left">
@@ -42,6 +43,7 @@ const Tokenomics = () => {
                     </div>
                 </div>
             </div>
+            <TokenomicsMobile/>
         </div>
     </div>
   )

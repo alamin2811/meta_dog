@@ -159,13 +159,27 @@
         margin-top: 50px;
     }
     .about-card {
-        background: url(../images/bg/about-bg-phn.png);
+        background: transparent;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
+        position: relative;
+        .about-bg{
+            position: absolute;
+            z-index: 0;
+            top: 0px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
         .overlay{
             padding-top: 237px !important;
-            background: linear-gradient(180deg, rgba(3, 6, 89, 0.00) 0%, #030659 48.82%);
+            background: linear-gradient(180deg, rgba(3, 6, 89, 0.00) 100px, #030659 46%);
+            position: relative;
+            z-index: 2;
+            &.active{
+                background: linear-gradient(180deg, rgba(3, 6, 89, 0.00) 0%, #030659 28%);
+            }
         }
         .about-text{
             text-align: left;
@@ -178,6 +192,17 @@
                 display: block;
             }
         }
+    }
+    .tokenomics-content{
+        &-desktop{
+            display: none;
+        }
+        &-mobile{
+            display: block !important;
+        }
+    }
+    .tokenomics-data{
+        width: 100%;
     }
     .tokenomics-data-section {
         flex-wrap: wrap;
@@ -262,6 +287,33 @@
     body{
         font-size: 16px;
         line-height: 30px;
+    }
+    .header-section-inner{
+        .logo{
+            max-width: 113px;
+        }
+    }
+    .banner-section {
+        background: url(/src/assets/images/bg/mobile-banner-bg.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            border-radius: 400px;
+            background: #0F189260;
+            filter: blur(250px);
+            right: -150px;
+            top: -300px;
+            left: auto;
+        }
+        .overlay{
+            background: transparent;
+        }
+        .overlay2{
+            background: transparent;
+        }
     }
     .tokenomics-section {
         .tokenomics-content {

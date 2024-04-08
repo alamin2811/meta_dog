@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SectionTitle from '../../components/SectionTitle';
+import aboutBg from '../../assets/images/bg/about-bg-phn.png'
 
 const AboutSection = () => {
   const [showMore, setShowMore] = useState(false);
@@ -12,7 +13,8 @@ const AboutSection = () => {
     <div className='about-section' id='aboutSection'>
       <div className="container">
         <div className="about-card">
-          <div className="overlay">
+          <img src={aboutBg} alt="img" className='about-bg' />
+          <div className={`overlay ${showMore ? 'active' : ''}`}>
             <div className="about-text">
               <SectionTitle titlePosition="left" title="Turn your passion into profits" subtitle="About MetaDog" />
               <div className="about-us-content">

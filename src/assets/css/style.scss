@@ -576,6 +576,9 @@ img{
     background-size: cover;
     border-radius: 40px;
     overflow: hidden;
+    .about-bg{
+        display: none;
+    }
 
     .overlay {
         background: linear-gradient(90deg, rgba(3, 6, 89, 0.00) 0%, rgba(3, 6, 89, 0.92) 48.82%);
@@ -980,6 +983,9 @@ img{
             font-weight: 400;
             line-height: 30px;
             text-align: center;
+        }
+        &-mobile{
+            display: none;
         }
     }
 }
